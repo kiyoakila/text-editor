@@ -1,4 +1,15 @@
-# Production Grade Next.js course
-> by scott moss and frontendmasters
+## Description
+Block style text editor built with next.js, Editor.js, next-remote-mdx.
 
-[Curriculum](https://production-grade-nextjs.vercel.app)
+## Environment
+Node: v 16.8.0
+
+To run the app:
+```
+yarn
+yarn dev
+```
+
+## Preview
+![docs](/public/docs.png)
+![docs](/public/editor.png)
