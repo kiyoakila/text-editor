@@ -18,7 +18,7 @@ const Blog = ({ posts }) => {
       <main>
         <Container>
           {posts.map((post) => (
-            <Pane key={post.title} marginY={majorScale(5)}>
+            <Pane key={post.title} marginY={majorScale(5)} backgroundColor="#FAFBFF">
               <PostPreview post={post} />
             </Pane>
           ))}

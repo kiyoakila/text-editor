@@ -11,9 +11,11 @@ const Home: FC<{ content: { hero: any; features: any[] } }> = ({ content }) => {
     <Pane>
       <header>
         <HomeNav />
-        <Container>
-          <Hero content={content.hero} />
-        </Container>
+        <Pane backgroundColor="#E7E4F9">
+          <Container>
+            <Hero content={content.hero} />
+          </Container>
+        </Pane>
       </header>
       <main>
         {content.features.map((feature, i) => (
@@ -21,29 +23,18 @@ const Home: FC<{ content: { hero: any; features: any[] } }> = ({ content }) => {
             key={feature.title}
             title={feature.title}
             body={feature.body}
-            image="/docs.png"
+            image={`${feature.image}`}
             invert={i % 2 === 0}
           />
         ))}
       </main>
       <footer>
-        <Pane background="overlay" paddingY={majorScale(9)}>
-          <Container>hello</Container>
+        <Pane background="#6E62B6" paddingY={majorScale(6)} textAlign="center">
+          <Container>Made by Paprika Team © 2022</Container>
         </Pane>
       </footer>
     </Pane>
   )
-}
-
-/**
- * Should really get this content from our CMS
- */
-
-Home.defaultProps = {
-  content: {
-    features: [{ title: 'default feature', body: 'default body' }],
-    hero: { title: 'default title', body: 'default body' },
-  },
 }
 
 export function getStaticProps(context) {

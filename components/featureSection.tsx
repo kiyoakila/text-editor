@@ -11,8 +11,12 @@ const FeatureSection: FC<{ invert?: boolean; title: string; body: string; image:
 }) => {
   const Left = () => (
     <Pane>
-      <Heading size={900}>{title}</Heading>
-      <Paragraph size={500}>{body}</Paragraph>
+      <Heading size={900} fontWeight={900}>
+        {title}
+      </Heading>
+      <Paragraph size={500} paddingTop={20}>
+        {body}
+      </Paragraph>
     </Pane>
   )
   const Right = () => (
@@ -24,8 +28,8 @@ const FeatureSection: FC<{ invert?: boolean; title: string; body: string; image:
   const children = invert ? [Right, Left] : [Left, Right]
   return (
     <Pane
-      minHeight="70vh"
-      background={invert ? 'tint1' : 'white'}
+      minHeight="50vh"
+      background={invert ? 'white' : '#E7E4F9'}
       paddingY={majorScale(8)}
       borderTop
       display="flex"

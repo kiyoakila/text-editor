@@ -5,23 +5,27 @@ export const home = {
       body: 'blah blah blah, our product is the best!',
     },
     features: [
-      { title: 'Feature 1', body: 'something dope about feature 1 here soon.' },
-      { title: 'Feature 2', body: 'something dope about feature 2 here soon.' },
+      { title: 'Feature 1', body: 'something dope about feature 1 here soon.', image: '/' },
+
+      { title: 'Feature 2', body: 'something dope about feature 2 here soon.', image: '/' },
     ],
   },
   published: {
     hero: {
-      title: 'A beautiful knowledge base for your whole team.',
-      body: 'High performing teams use Known to document and record everything. Some other cool SaaS tag line here.',
+      title: 'You next knowledge base.',
+      body: 'High performing editor to document and record everything.',
     },
     features: [
       {
-        title: 'Next gen editor',
-        body:
-          'Forget about markdown and rich text. Our editor is superchared to handle any content you can throug at it.',
+        title: 'Next Gen Editor',
+        body: 'Forget about markdown and rich text. Our minimum design editor is superchared to handle any content.',
+        image: '/editor.png',
       },
-      { title: 'Stay organized', body: 'Use folders to put your docs right where you need them when you need them.' },
-      { title: 'Beautiful design', body: 'Award wining design that you will fall in love with.' },
+      {
+        title: 'Stay Organized',
+        body: 'Use folders to put your docs right where you need them when you need them.',
+        image: '/docs.png',
+      },
     ],
   },
 }
@@ -47,7 +51,7 @@ publsihedOn: ''
   ],
   published: [
     `---
-title: "We're hiring"
+title: "We're not hiring"
 summary: Come work at a really nice company.
 slug: we-are-hiring
 publsihedOn: '12-03-2020'
@@ -60,6 +64,6 @@ summary: If you write it down, you won't forget.
 slug: why-you-should-write-down-everything
 publsihedOn: '3-20-2020'
 ---
-## Elon musk writes`,
+## Alen Poe writes`,
   ],
 }

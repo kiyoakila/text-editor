@@ -77,7 +77,7 @@ const Editor: FC<{ docId: string; content: any }> = ({ content, docId }) => {
       holder: 'editorjs',
       data: content,
       autofocus: true,
-      placeholder: 'Paprika writes:.',
+      placeholder: 'Paprika writes:...',
       onChange: save,
     })
 

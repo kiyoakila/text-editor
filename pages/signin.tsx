@@ -22,7 +22,7 @@ const Signin = () => {
         borderRight
         paddingX={majorScale(8)}
         paddingY={majorScale(5)}
-        background="#47B881"
+        background="#6E62B6"
         display="flex"
         alignItems="center"
         justifyContent="center"
