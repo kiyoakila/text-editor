@@ -21,7 +21,7 @@ const FeatureSection: FC<{ invert?: boolean; title: string; body: string; image:
   )
   const Right = () => (
     <Pane textAlign={invert ? 'left' : 'right'} border elevation={1}>
-      <Image src={image} width={1200} height={600} layout="responsive" quality={100} loading="lazy" />
+      <Image src={image} width={1100} height={600} layout="responsive" quality={100} loading="lazy" />
     </Pane>
   )
 
