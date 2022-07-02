@@ -27,7 +27,7 @@ const BlogPost: FC<Post> = ({ source, frontMatter }) => {
   return (
     <Pane>
       <Head>
-        <title>{`Known Blog | ${frontMatter.title}`}</title>
+        <title>{`Paprika Blog | ${frontMatter.title}`}</title>
         <meta name="description" content={frontMatter.summary} />
       </Head>
       <header>

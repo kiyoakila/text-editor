@@ -6,8 +6,8 @@ const Logo = ({ ...styles }) => {
   return (
     <Link href="/">
       <a>
-        <Text fontSize="30px" color="#47B881" {...styles}>
-          <strong>Known.</strong>
+        <Text fontSize="30px" color="rgb(228, 91, 66)" {...styles}>
+          <strong>Paprika.</strong>
         </Text>
       </a>
     </Link>
