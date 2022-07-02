@@ -46,8 +46,12 @@ Home.defaultProps = {
   },
 }
 
-export function getStaticProps() {
-  return { props: { content: home.published } }
+export function getStaticProps(context) {
+  return {
+    props: {
+      content: context.preview ? home.draft : home.published,
+    },
+  }
 }
 
 export default Home

@@ -64,14 +64,14 @@ export async function getStaticPaths() {
     fallback: true,
   }
 }
-export async function getStaticProps({ params }) {
+export async function getStaticProps({ params, preview }) {
   let post
   // is the slug for a file system post or cms post
   try {
     const postPath = path.join(process.cwd(), 'posts', `${params.slug}.mdx`)
     post = fs.readFileSync(postPath, 'utf-8')
   } catch {
-    const cmsPosts = posts.published.map((p) => {
+    const cmsPosts = (preview ? posts.draft : posts.published).map((p) => {
       return matter(p)
     })
 
